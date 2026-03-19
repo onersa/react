@@ -1,32 +1,31 @@
-import React, { Component } from 'react';
+// import React, { Component } from 'react';
 import Card from "react-bootstrap/Card";
 import Rating from './Rating';
 
-class Product extends Component {
-        constructor(props) {
-        super(props);
- }
+function Product(props) {
+//         constructor(props) {
+//         super(props);
+//  }
 
- render() {
  return (
    <div>
      <hr></hr>
      
      <Card style={{ width: "18rem" }}>
-       <Card.Img variant="top" src={this.props.data.imageUrl} />
+       <Card.Img variant="top" src={props.data.imageUrl} />
        <Card.Body>
-         <Card.Title>{this.props.data.productName}</Card.Title>
-         {this.props.data.releasedDate}
+         <Card.Title>{props.data.productName}</Card.Title>
+         {props.data.releasedDate}
          <Rating
-           rating={this.props.data.rating}
-           numOfReviews={this.props.data.numOfReviews}
+           rating={props.data.rating}
+           numOfReviews={props.data.numOfReviews}
          />
-         {/* <p>Number of reviews: {this.props.data.numOfReviews}</p> */}
-         <Card.Text>{this.props.data.description}</Card.Text>
+         {/* <p>Number of reviews: {props.data.numOfReviews}</p> */}
+         <Card.Text>{props.data.description}</Card.Text>
        </Card.Body>
      </Card>
    </div>
  );
  }
-}
+
 export default Product;
