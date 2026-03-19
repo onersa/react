@@ -1,8 +1,7 @@
-import React, { Component } from "react";
+// import React, { Component } from "react";
 import { Container, Button } from "react-bootstrap";
 
-class JumboTronComponent extends Component {
-  render() {
+function JumboTronComponent(props) {
     return (
       <div>
         <Container fluid className="p-5 mb-4 bg-light rounded-3">
@@ -11,7 +10,7 @@ class JumboTronComponent extends Component {
             {/* Example 2 from App.js
            {this.props.body} */}
            {/* Example 3 from App.js */}
-           {this.props.children}
+           {props.body}
           </p>
           <p>
             <Button variant="primary">Learn more</Button>
@@ -20,6 +19,5 @@ class JumboTronComponent extends Component {
       </div>
     );
   }
-}
 
 export default JumboTronComponent;

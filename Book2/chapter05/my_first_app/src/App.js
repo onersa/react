@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+// import React, { Component } from 'react';
 import Products from './Products';
 import JumboTronComponent from './JumboTronComponent';
 // import { Button } from 'react-bootstrap';
 // import Rating from './Rating';
 
-class App extends Component {
- render() {
+function App() {
+//  render() {
    //  const isValid = false;
  return (
    <div>
@@ -20,16 +20,16 @@ class App extends Component {
      {/* Example 1 */}
      {/* <JumboTronComponent /> */}
      {/* Example 2 */}
-     {/* <JumboTronComponent body="This is text from App.js"/> */}
+     <JumboTronComponent body="This is text from App.js"/>
 
      {/* Example 3 */}
-     <JumboTronComponent>
+     {/* <JumboTronComponent>
        This is a long sentence, and I want to insert content into the jumbotron
        component from the outside.
-     </JumboTronComponent>
+     </JumboTronComponent> */}
      <Products />
    </div>
  );
  }
-}
+// }
 export default App;

@@ -3,9 +3,7 @@ import Card from "react-bootstrap/Card";
 import Rating from './Rating';
 
 class Product extends Component {
-        constructor(props) {
-        super(props);
- }
+   
 
  render() {
  return (
