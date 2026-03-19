@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
+// import React, { Component } from 'react';
 import Products from './Products';
 import { Button } from 'react-bootstrap';
 import Rating from './Rating';
 
-class App extends Component {
- render() {
+function App() {
     const isValid = false;
  return (
  <div>
@@ -19,5 +18,5 @@ class App extends Component {
  </div>
  );
  }
-}
+
 export default App;

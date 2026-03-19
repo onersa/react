@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+
 import Products from './Products';
-class App extends Component {
- render() {
+function App() {
+
  return (
  <div>
  <h1>My First React App!</h1>
@@ -9,5 +9,5 @@ class App extends Component {
  </div>
  );
  }
-}
+
 export default App;
